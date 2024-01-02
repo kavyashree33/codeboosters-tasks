@@ -1,0 +1,82 @@
+/* Applying styles to all elements to reset margin, padding, and use border-box */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+   
+}
+
+/* Styling the body element */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: wavy;
+    background: linear-gradient(red, white);
+    
+}
+
+/* Styling the Add To Cart button container */
+.ATC-button {
+    display: flex;
+    align-items: center;
+    padding: 20px 36px;
+    border: 3px solid black;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgb(165, 30, 30);
+    cursor: pointer;
+}
+
+/* Styling the first button (spinner) */
+.ATC-button .first-button {
+    font-size: 28px;
+    color: rgb(238, 231, 231);
+    margin-right: 9px;
+    display: none;
+}
+
+/* Styling the first button when the .checked class is present */
+.ATC-button.checked .first-button {
+    display: flex;
+}
+
+/* Styling the spinner animation */
+.first-button.spinner.spin {
+    animation: spin 1.3s ease-in-out infinite;
+}
+
+/* Keyframes for the spinner animation */
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Styling the checkmark button */
+.first-button.check {
+    display: inline-flex;
+    height: 32px;
+    width: 32px;
+    font-size: 18px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(16, 16, 17);
+}
+
+/* Styling the button text */
+.ATC-button .button-text {
+    font-size: 32px;
+    font-weight: 400;
+    color: rgb(7, 7, 7);
+}
+
+/* Styling the shopping cart icon within the button text */
+.ATC-button .button-text .bi-shop {
+    color: rgb(250, 250, 250);
+    text-align: center;
+    margin-right: 10px;
+}
