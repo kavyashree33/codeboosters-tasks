@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product-card.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>PRODUCT-CARD ANIMATED</title>
+</head>
+<body>
+    <!-- Main Product Section -->
+    <article class="product-card-animated">
+
+        <!-- Logo and Shopping Bag Icon Section -->
+        <header class="logo">
+        
+            <img src="C:\Users\kavya\Downloads\code boosters\product-cart\733594.png" alt="logo">
+            <i class='bx bxs-shopping-bags'></i>
+        </header>
+
+        <!-- Shoe Images Section -->
+        <section class="shoe-images">
+            <img id="white" class="white active" src="white.png" alt="White Shoes" height="100%" width="100%">
+            <img id="black" class="black" src="black.png" alt="Black Shoes" height="100%" width="100%">
+            <img id="green" class="green" src="green.png" alt="Green Shoes" height="100%" width="100%">
+            <img id="red" class="red" src="red.png" alt="Red Shoes" height="100%" width="100%">
+        </section>
+
+        <!-- Shoe Details Section -->
+        <section class="shoe-details">
+            <h1 class="shoe-name"><strong>Samba X-10</strong></h1>
+            <p><i>This innovative shoe brand seamlessly blends cutting-edge technology with timeless design, offering a perfect fusion of style and comfort</i></p>
+
+            <!-- Star Rating Section -->
+            <div class="star-rate">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+            </div>
+        </section>
+
+        <!-- Color Options and Price Section -->
+        <section class="color-price">
+            <!-- Color Options Section -->
+            <div class="options">
+                <span class="color">color:</span>
+                <div class="circles">
+                    <span class="circle white active" id="white"></span>
+                    <span class="circle black" id="black"></span>
+                    <span class="circle green" id="green"></span>
+                    <span class="circle red" id="red"></span>
+                </div>
+            </div>
+
+            <!-- Price Section -->
+            <div class="price">
+                <span class="shoes-price">$ 15.00</span>
+                <span class="price-letter">fifteen dollars</span>
+            </div>
+        </section>
+
+        <!-- Add to Cart Button Section -->
+        <section class="button">
+            <div class="button-box"></div>
+            <button>Add To Cart</button>
+        </section>
+    </article>
+
+    <!-- JavaScript Script Section -->
+    <script src="product-card.js"></script>
+</body>
+</html>

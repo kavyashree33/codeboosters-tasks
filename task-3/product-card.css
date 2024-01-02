@@ -1,0 +1,252 @@
+/* Importing fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Montserrat:ital,wght@0,100;1,100&family=Playfair+Display:ital@0;1&family=Rubik+Scribble&family=Sevillana&family=Single+Day&display=swap');
+
+/* Resetting default styles and setting up the global box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Styling the body */
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Gradient background */
+    background: linear-gradient(blue, black, yellow, pink);
+}
+
+/* Styling for the animated product card container */
+.product-card-animated {
+    position: relative;
+    max-width: 355px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px 30px 30px 30px;
+    box-shadow: 0 5px 10px rgba(240, 220, 220, 0.2);
+    background: linear-gradient(#EDCBD2, #80C4B7, #E3856B);
+    z-index: 3;
+    overflow: hidden;
+}
+
+/* Styling for the logo section within the product card */
+.product-card-animated .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for the logo image */
+.product-card-animated .logo img {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+/* Styling for the shopping bag icon */
+.product-card-animated .logo i {
+    font-size: 35px;
+    color: #53331F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for the shopping bag icon */
+.product-card-animated .logo i:hover {
+    color: rgb(236, 21, 21);
+}
+
+/* Styling for the shoe images section */
+.product-card-animated .shoe-images {
+    position: relative;
+    height: 300px;
+}
+
+/* Styling for individual shoe images */
+.product-card-animated .shoe-images img {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    transform: rotate(18deg);
+    left: -30px;
+    top: -50px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Displaying the active shoe image */
+.product-card-animated .shoe-images img.active {
+    opacity: 1;
+}
+
+/* Styling for the shoe details section */
+.product-card-animated .shoe-details .shoe-name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #00246B;
+}
+
+/* Styling for the shoe details paragraph */
+.product-card-animated .shoe-details p {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(2, 2, 8);
+    text-align: justify;
+}
+
+/* Styling for the star rating section */
+.product-card-animated .shoe-details .star-rate i {
+    margin: 0 -1px;
+    color: rgb(248, 8, 236);
+    font-size: large;
+}
+
+/* Hover effect for the star rating icons */
+.product-card-animated .shoe-details .star-rate i:hover {
+    color: rgb(8, 8, 8);
+}
+
+/* Styling for the color options and price section */
+.product-card-animated .color-price .options {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for the color options, price, and circles */
+.color-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styling for the color label */
+.color-price .options .color {
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(51, 4, 4);
+    margin-right: 8px;
+}
+
+/* Styling for the circles representing color options */
+.options .circles {
+    display: flex;
+}
+
+/* Styling for individual color circles */
+.options .circles .circle {
+    height: 18px;
+    width: 18px;
+    background: black;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+/* Styling for the active white color circle */
+.options .circles .circle.white.active {
+    box-shadow: 0 0 0 2px #fff,
+                  0 0 0 4px black;
+}
+
+/* Styling for the inactive black color circle */
+.options .circles .circle.black {
+    background: white;
+}
+
+/* Styling for the active black color circle */
+.options .circles .circle.black.active {
+    box-shadow: 0 0 0 2px #fff,
+                  0 0 0 4px white;
+}
+
+/* Styling for the green color circle */
+.options .circles .circle.green {
+    background: lightgreen;
+}
+
+/* Styling for the active green color circle */
+.options .circles .circle.green.active {
+    box-shadow: 0 0 0 2px #fff,
+                  0 0 0 4px lightgreen;
+}
+
+/* Styling for the red color circle */
+.options .circles .circle.red {
+    background: red;
+}
+
+/* Styling for the active red color circle */
+.options .circles .circle.red.active {
+    box-shadow: 0 0 0 2px #fff,
+                  0 0 0 4px red;
+}
+
+/* Styling for the price section */
+.color-price .price {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for the shoes price */
+.color-price .price .shoes-price {
+    font-size: 25px;
+    font-weight: 600;
+    color: #DC3E26;
+}
+
+/* Styling for the price letter */
+.color-price .price .price-letter {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: -4px;
+    color: #341514;
+}
+
+/* Styling for the button section */
+.product-card-animated .button {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+/* Styling for the button box inside the button section */
+.product-card-animated .button .button-box {
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    background: linear-gradient(135deg, darkblue, red, darkorange);
+    transition: all 04.s ease;
+    border-radius: 25px;
+}
+
+/* Hover effect for the button box */
+.product-card-animated .button:hover .button-box {
+    left: 0;
+    background: linear-gradient(purple, blue);
+
+}
+
+/* Styling for the button */
+.product-card-animated .button button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: rgb(250, 250, 245);
+}
